@@ -7,44 +7,13 @@ PHP 5.4.16 (cli) (built: Apr 12 2018 19:02:01)
 Copyright (c) 1997-2013 The PHP Group
 Zend Engine v2.4.0, Copyright (c) 1998-2013 Zend Technologies
 
-Install LAMP stack by (mariadb is optional):
-sudo yum install httpd
-sudo systemctl start httpd.service
-sudo systemctl enable httpd.service
-sudo yum install mariadb-server mariadb
-sudo systemctl start mariadb
-sudo mysql_secure_installation
-sudo systemctl enable mariadb.service
-sudo yum install php php-mysql
-sudo mkdir /var/log/php
-sudo chown apache /var/log/php
-sudo systemctl reload httpd
-
-File Structure:
-..
-css/
-    excerpt.css
-    jcarousel.basic.css
-    style.css
-javascript/
-    jcarousel.basic.js
-    jquery.jcarousel.js
-    jquery.js
-templates/
-    carousel.template.html
-generate.php
-
 If you copy the file structure that is accessible to the internet, then you may run the commands below out of the box.  However, if you move folders or files around then you may break the script.  Keep in mind that after you successfully run the command and generate an html file that you can move the html file, but you also must move the javascript and css directories.  You may also edit your html file so that the javascript and css tags match the location of those directories.
 
 How to run:
-php generate.php {ISBN} {destination.file}
-php generate.php {ISBN,ISBN,...} {distination.file}
-php generate.php {isbn_source.file} {distination.file}
+Type the following lines into the command line, ommit the single quotes: 
+'php generate.php {ISBN} {destination.file}'.  {ISBN} may be a single ISBN, or many ISBN seperated by a comma with not spaces.  It may also be a file that contains a list of ISBN on seperate lines.  {destination.file} is the name of the html file you would like to create.  If blank, 'index.html' will be created.  A word of caution, if the file already exists then this program will overwrite it.
 
-{ISBN} - The first argument for the script can be a single ISBN number.
-{ISBN,ISBN,...}The first argument may be many ISBN numbers seperated by a ',' with no spaces
-{isbn_source.file}The first argument may be the name of a file that has an ISBN number on each line.
+Example:  'php generate.php 554433222 onebook.html'.  The program will attempt to look up the number 554433222 and create onebook.html if the ISBN is found.
 
-{destination.file} The second argument is optional, but if provided the script will create the file given the name you provide.  If blank then it will create 'index.html'.  Caution!  This will overwrite the file if it already exist.
 
 You may need to run the above commands with the 'sudo' command depending on your environment and permission level.
