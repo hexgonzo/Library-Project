@@ -7,7 +7,7 @@ PHP 5.4.16 (cli) (built: Apr 12 2018 19:02:01)
 Copyright (c) 1997-2013 The PHP Group
 Zend Engine v2.4.0, Copyright (c) 1998-2013 Zend Technologies
 
-If you copy the file structure that is accessible to the internet, then you may run the commands below out of the box.  However, if you move folders or files around then you may break the script.  Keep in mind that after you successfully run the command and generate an html file that you can move the html file, but you also must move the javascript and css directories.  You may also edit your html file so that the javascript and css tags match the location of those directories.
+If you copy the file structure in a directory that is accessible to the internet, then you may run the commands below out of the box.  However, if you move folders or files around then you may break the script.  Keep in mind that after you successfully run the command and generate an html file that you can move the html file, but you also must move the javascript and css directories.  You may also edit your html file so that the javascript and css tags match the location of those directories.
 
 How to run:
 Type the following lines into the command line, ommit the single quotes: 
