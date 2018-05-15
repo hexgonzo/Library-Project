@@ -11,7 +11,7 @@ If you copy the file structure in a directory that is accessible to the internet
 
 How to run:
 Type the following lines into the command line, ommit the single quotes: 
-'php generate.php {ISBN} {destination.file}'.  {ISBN} may be a single ISBN, or many ISBN seperated by a comma with not spaces.  It may also be a file that contains a list of ISBN on seperate lines.  {destination.file} is the name of the html file you would like to create.  If blank, 'index.html' will be created.  A word of caution, if the file already exists then this program will overwrite it.
+'php generate.php {ISBN} {destination.file}'.  {ISBN} may be a single ISBN, or many ISBN seperated by a comma with no spaces.  It may also be a file that contains a list of ISBN on seperate lines.  {destination.file} is the name of the html file you would like to create.  If blank, 'index.html' will be created.  A word of caution, if the file already exists then this program will overwrite it.
 
 Example:  'php generate.php 554433222 onebook.html'.  The program will attempt to look up the number 554433222 and create onebook.html if the ISBN is found.
 
