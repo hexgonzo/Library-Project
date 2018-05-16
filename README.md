@@ -1,8 +1,10 @@
 # Library-Project
 A simple project that will be used to evaluate my competency as a web developer for Fresno State.
 Installed and tested on Centos 7:
+
 Linux version 3.10.0-862.2.3.el7.x86_64 (builder@kbuilder.dev.centos.org) (gcc version 4.8.5 20150623 (Red Hat 4.8.5-28) (GCC) ) #1 SMP Wed May 9 18:05:47 UTC 2018
 PHP Version: 
+
 PHP 5.4.16 (cli) (built: Apr 12 2018 19:02:01)
 Copyright (c) 1997-2013 The PHP Group
 Zend Engine v2.4.0, Copyright (c) 1998-2013 Zend Technologies
